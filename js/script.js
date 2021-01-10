@@ -6,6 +6,8 @@ $(document).ready(function(){
   $('.nav i').click(function(){
     $('.nav i.active').removeClass('active');
     $(this).addClass('active');
+    $(".images img.active").removeClass("active"));
+    $("img").eq($(this).addClass("active"));
   });
 
 });
@@ -17,7 +19,6 @@ function pulsanteNext(){
   // $('.images img.active').next().addClass('active');
 
   var imgAttiva = $('.images img.active');
-  console.log(imgAttiva);
   //è importante usare la variabile
 
   var pallinoAttivo = $('.nav i.active');
@@ -48,10 +49,7 @@ function pulsantePrev(){
   pallinoAttivo.removeClass('active');
   pallinoAttivo.prev().addClass('active');
 
-  if(imgAttiva.hasClass('last')){
-    $('.images img.first').addClass('active');
-    $('.nav i.first').addClass('active');
-  }
+
 
 }
 
