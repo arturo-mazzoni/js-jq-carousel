@@ -8,7 +8,7 @@ $(document).ready(function(){
   $('.nav i').click(function(){
     $('.nav i.active').removeClass('active');
     $(this).addClass('active');
-    // $(".images img.active").removeClass("active"));
+    $(".images img.active").removeClass("active");
     $("img").eq($(this).index()).addClass("active");
   });
 });
